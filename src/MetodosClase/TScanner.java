@@ -31,10 +31,10 @@ public class TScanner {
 	}
 	public static String leerString(String msje) {
 		System.out.println(msje);
-		return leer.nextLine();
+		return leer.next();
 	}
 	public static char leerChar(String msje) {
 		System.out.println(msje);
-		return leer.nextLine().charAt(0);
+		return leer.next().charAt(0);
 	}
 }
