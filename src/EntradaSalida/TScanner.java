@@ -1,4 +1,4 @@
-package MetodosClase;
+package EntradaSalida;
 
 import java.util.Scanner;
 

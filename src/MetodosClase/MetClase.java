@@ -2,6 +2,8 @@ package MetodosClase;
 
 import java.util.Scanner;
 
+import EntradaSalida.TScanner;
+
 public class MetClase {
 	
 	public static void numerCuadrado(){
