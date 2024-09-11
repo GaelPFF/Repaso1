@@ -8,6 +8,7 @@ import EntradaSalida.TScanner;
 import MetodosClase.MetClase;
 import TDA.Auto;
 import TDA.Futbolista;
+import TDA.Televisor;
 
 public class TestPrincipal {
 
@@ -48,10 +49,19 @@ public class TestPrincipal {
 				
 		
 	}
+	public static String creaObjetoTelevisor() {
+		Televisor objeto=new Televisor();
+		objeto.setMarcaTv(TJOption.leerString("Escribe la marca del televisor: "));
+		objeto.setTecpantallaTv(TJOption.leerString("Escribe la tecnologia de la pantalla: "));
+		objeto.setFormaTv(TJOption.leerString("Escribe la forma de la pantalla: "));
+		objeto.setPulgadasTv(TJOption.leerBytes("Escribe de cuantas pulgadas es el televisor: "));
+		
+		return objeto.toString();
+	}
 	
 	public static void menuObjetos() {
 	
-		String cad= "Menu\n 1) Objeto Auto\n 2) Objeto Futbolista\n 3) Salir\n";
+		String cad= "Menu\n 1) Objeto Auto\n 2) Objeto Televisor\n 3) Objeto Futbolista\n 4) Salir\n";
 		cad+="Selecciona una opcion:";
 		byte opcion;
 		String unir_Obj="";
@@ -61,11 +71,14 @@ public class TestPrincipal {
 		case 1: System.out.println("Creacion de objeto de tipo Auto");
 				 unir_Obj+=creaObjetoAuto()+"\n";
 				break;
-		case 2: System.out.println("Creacion de objeto de tipo Futbolista");
+		case 2: System.out.println("Creacion de objeto de tipo Televisor");
+		 		 unir_Obj+=creaObjetoTelevisor()+"\n";
+		 		break;
+		case 3: System.out.println("Creacion de objeto de tipo Futbolista");
 				 unir_Obj+=creaObjetoFutbolista()+"\n";
 				break;
-		case 3:TJOption.imprimir("Datos capturados:\n"+ unir_Obj);break;
-		case 4: System.out.println("Fin del programa");
+		case 4:TJOption.imprimir("Datos capturados:\n"+ unir_Obj);break;
+		case 5: System.out.println("Fin del programa");
 				break;
 		default: System.out.println("Opcion incorrecta, intenta de nuevo");
 				break;

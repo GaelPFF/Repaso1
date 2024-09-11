@@ -22,5 +22,8 @@ public class TJOption {
 	public static void imprimir(String msje) {
 		JOptionPane.showMessageDialog(null, msje, "Salida", JOptionPane.PLAIN_MESSAGE);
 	}
+	public static void imprimeError(String msje) {
+		JOptionPane.showMessageDialog(null, msje, "Salida" ,JOptionPane.ERROR_MESSAGE);
+	}
 	
 }
