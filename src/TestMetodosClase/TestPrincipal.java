@@ -77,9 +77,9 @@ public class TestPrincipal {
 		case 3: System.out.println("Creacion de objeto de tipo Futbolista");
 				 unir_Obj+=creaObjetoFutbolista()+"\n";
 				break;
-		case 4:TJOption.imprimir("Datos capturados:\n"+ unir_Obj);break;
-		case 5: System.out.println("Fin del programa");
+		case 4: TJOption.imprimir("Datos capturados:\n"+ unir_Obj);
 				break;
+		
 		default: System.out.println("Opcion incorrecta, intenta de nuevo");
 				break;
 		}// switch
