@@ -40,6 +40,7 @@ public class Auto {
 		this.numllantasAuto = numllantasAuto;
 	}
 
+	// el toString sirve para pasar el onjeto a cadena
 	@Override
 	public String toString() {
 		return "Auto [marcaAuto=" + marcaAuto + ", colorAuto=" + colorAuto + ", modeloAuto=" + modeloAuto + ", añoAuto="

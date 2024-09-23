@@ -20,7 +20,7 @@ public class Futbolista {
 		this.numeroFutbolista=numeroFutbolista;
 	
 	}
-
+	// Setter para cambiar el valor de un atributo de forma abierta
 	public void setNombreFutbolista(String nombreFutbolista) {
 		this.nombreFutbolista = nombreFutbolista;
 	}
@@ -45,6 +45,7 @@ public class Futbolista {
 		this.numeroFutbolista = numeroFutbolista;
 	}
 
+	// Metodo toString para pasar el objeto a cadena
 	@Override
 	public String toString() {
 		return "Futbolista [nombreFutbolista=" + nombreFutbolista + ", posicionFutbolista=" + posicionFutbolista

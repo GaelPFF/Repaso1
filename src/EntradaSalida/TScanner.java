@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class TScanner {
 
+	// nueva instancia scanner
 	static Scanner leer=new Scanner(System.in);
 	public static byte leerBytes(String msje) {
 		System.out.println(msje+"byte:"+Byte.MIN_VALUE+".."+Byte.MAX_VALUE);
@@ -29,6 +30,7 @@ public class TScanner {
 		System.out.println(msje+"double:"+Double.MIN_VALUE+".."+Double.MAX_VALUE);
 		return leer.nextDouble();
 	}
+	// string y char no llevan nextChar o nextString
 	public static String leerString(String msje) {
 		System.out.println(msje);
 		return leer.next();

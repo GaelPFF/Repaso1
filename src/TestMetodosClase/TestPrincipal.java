@@ -18,6 +18,8 @@ public class TestPrincipal {
 				
 	}
 
+	
+	// a partir de aca estan los metodos de los objetos
 	public static String creaObjetoAuto() {
 		// instancia
 		Auto objeto=new Auto();
@@ -29,7 +31,6 @@ public class TestPrincipal {
 		objeto.setAñoAuto(TJOption.leerShort("Escribe año del Auto: "));
 		objeto.setNumllantasAuto(TJOption.leerBytes("Escribe numero de llantas del Auto: "));
 		
-		//System.out.println(objeto.toString());
 		return objeto.toString();		
 		
 	}
@@ -59,6 +60,7 @@ public class TestPrincipal {
 		return objeto.toString();
 	}
 	
+	// este es el menu de opciones para usar los diferentes metodos 
 	public static void menuObjetos() {
 	
 		String cad= "Menu\n 1) Objeto Auto\n 2) Objeto Televisor\n 3) Objeto Futbolista\n 4) Salir\n";
